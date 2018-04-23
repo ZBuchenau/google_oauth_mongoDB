@@ -1,3 +1,5 @@
+"use strict";
+
 const mongoose = require('mongoose');
 const { Schema } = mongoose; // equals const Schema = mongoose.Schema
 
@@ -9,4 +11,4 @@ const userSchema = new Schema({
   gender: String
 });
 
-mongoose.model('User', userSchema);
+mongoose.model('users', userSchema);
