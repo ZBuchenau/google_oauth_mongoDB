@@ -23,7 +23,8 @@ passport.deserializeUser((id, done) => {
 passport.use(new GoogleStrategy({
   clientID : privateKeys.googleClientID,
   clientSecret : privateKeys.googleClientSecret,
-  callbackURL : '/auth/google/callback'
+  callbackURL : '/auth/google/callback',
+  proxy: true
 }, (accessToken, refreshToken, profile, done) => {
   console.log("here");
     // search database for existing user
