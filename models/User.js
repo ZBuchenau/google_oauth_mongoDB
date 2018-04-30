@@ -8,7 +8,8 @@ const userSchema = new Schema({
   firstName : String,
   lastName : String,
   email : String,
-  gender: String
+  gender: String,
+  credits: { type: Number, default: 0 }
 });
 
 mongoose.model('users', userSchema);

@@ -6,5 +6,8 @@ module.exports = {
   googleClientSecret : process.env.GOOGLE_CLIENT_SECRET,
   // mLab mongedb database
   mongoURI : process.env.MONGO_URI,
-  cookieKey: process.env.COOKIE_KEY
+  cookieKey: process.env.COOKIE_KEY,
+  // Stripe keys
+  stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+  stripeSecretKey: process.env.STRIPE_SECRET_KEY
 }
