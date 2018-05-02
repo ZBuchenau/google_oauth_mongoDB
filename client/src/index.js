@@ -10,6 +10,8 @@ import reduxThunk from 'redux-thunk';
 // import custom files and components
 import App from './components/App.js';
 import reducers from './reducers';
+import axios from 'axios';
+window.axios = axios;
 
 // action creators initiate change inside our React/Redux application (modify state)
 

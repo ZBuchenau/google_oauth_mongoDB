@@ -5,11 +5,9 @@ import { connect } from 'react-redux';
 import * as actions from '../actions'
 import Header from './Header.js';
 import Landing from './Landing.js';
-
-
-const Dashboard = () => <h2>Dashboard</h2>;
-const SurveyNew = () => <h2>SurveyNew</h2>;
-
+import Dashboard from './Dashboard.js';
+import SurveyNew from './surveys/SurveyNew.js';
+import SurveyForm from './surveys/SurveyForm.js';
 
 class App extends Component {
   // make initial ajax request to check user authentication
